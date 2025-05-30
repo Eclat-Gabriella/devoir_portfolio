@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: #f7f9fa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.logo{
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Nav{
+    color:#f6f6f8 ;
+    height: 50px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    list-style: none;
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+a:hover{
+    color:black;
+}
+.image{
+    position: right;
+    height: 690px;;
+    width: 600px;
+    margin-right: 2px;
+    margin-top: 50px;
+    max-height: 570px;
+    margin: 50px;
+    border-radius: 30px;
+   
+}
+
+.competences{
+    color: palevioletred;
+    margin-left:14px ;
+    margin-top: 50%;
+  }
+  .texte {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 53%; 
+    padding: 210px; 
+    box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+    .Nav {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .lien {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%; 
+        max-height: 400px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .section {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .competences {
+        margin: 20px auto;
+        font-size: 18px; 
+    }
+
+    .texte {
+        width: 90%;
+        padding: 50px;
+        position: static;
+    }
+}
+
+

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: #f7f9fa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo{
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Nav{
+    color:#f6f6f8 ;
+    height: 50px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    list-style: none;
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+a:hover{
+    color:black;
+  
+}
+img{
+    position: right;
+    height: 690px;;
+    width: auto;
+    margin-right: 2px;
+}
+.mots{
+     display: flex;
+     left: 17%;
+     position: center;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     gap:40px;
+     
+}
+.titre{
+    color: palevioletred;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+.texte{
+    text-align: center;
+    max-width: 700px;
+
+}
+p{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color: palevioletred;
+  }
+
+  .timeline ul li {
+    width: 45%;
+    position: relative;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-20px);
+  }
+
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(20px);
+  }
+
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    z-index: 1;
+  }
+
+  .timeline ul li:nth-child(odd)::before {
+    right: -30px;
+  }
+
+  .timeline ul li:nth-child(even)::before {
+    left: -30px;
+  }
+}
+

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #050505;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: #f7f9fa;
+    
+}
+.logo{
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.date{
+  color: white;
+  font-size: 800px;
+  font-weight: bold;
+}
+.Nav{
+    color:#f6f6f8 ;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    list-style: none;
+    color:palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 30px;
+}
+a:hover{
+    color:black;
+}
+.container {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 65px 0;
+}
+.timeline {
+  width: 80%;
+  max-width: 850px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: rgb(247, 242, 243);
+  color:palevioletred;
+  border-radius: 10px;
+  margin: 10px auto;
+  position: relative;
+  width: 45%;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color:palevioletred;
+  }
+  .timeline ul li {
+    margin-bottom: 50px;
+
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    border-radius: 0px 20px 20px 20px;
+  }
+
+   
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -11px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -11px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: gray;
+  }
+  .burger{
+        display: flex;
+        top: 0;
+
+    }
+    .logo{
+        text-align: right;
+    }
+  
+}
+.burger{
+    display : none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.burger div{
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+    border-radius: 2px;
+    padding: 1.5px;
+
+}
